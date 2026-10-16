@@ -4,6 +4,7 @@
     <nav>
         <router-link to="/">{{ $t('nav.home') }}</router-link>
         <router-link to="/market">{{ $t('nav.market') }}</router-link>
+        <router-link to="/news">{{ $t('nav.news') || 'News' }}</router-link>
         <router-link to="/sector">{{ $t('nav.sector') }}</router-link>
         <router-link to="/funds">{{ $t('nav.funds') }}</router-link>
     </nav>
@@ -45,5 +46,13 @@ nav a {
 .controls {
   display: flex;
   gap: 1rem;
+}
+</style>
+
+<style scoped>
+nav a.active {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
 }
 </style>

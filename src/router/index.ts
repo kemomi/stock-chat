@@ -3,10 +3,12 @@ import HomeView from '../views/HomeView.vue';
 import MarketView from '../views/MarketView.vue';
 import SectorView from '../views/SectorView.vue';
 import FundsView from '../views/FundsView.vue';
+import NewsView from '../views/NewsView.vue';
 
 const routes = [
   { path: '/', component: HomeView, name: 'home' },
   { path: '/market', component: MarketView, name: 'market' },
+  { path: '/news', component: NewsView, name: 'news' },
   { path: '/sector', component: SectorView, name: 'sector' },
   { path: '/funds', component: FundsView, name: 'funds' },
 ];
